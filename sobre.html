@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hero2{
+            width: 100%;
+            height: auto;
+            background: url(imagens/casa-propria-940x682.jpg);
+            background-position: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+
+        }
+        .lateral-content2{
+            background-color: rgba(255, 255, 255, 0.808);
+            padding: 20px;
+            margin-top: 0px;
+            width: 100%;
+        }
+        .lateral-content2>h1{
+            font-size: clamp(1rem, 4vw, 3rem);
+            width: 50%;
+            color: var(--black-color);
+        }
+        .lateral-content2>h1>span{
+            color: var(--dourado-color);
+            font-weight: 600;
+}
+        p{
+            font-size: clamp(0.7rem, 1vw, 1rem);
+            width: 60%;
+            margin-top: 10px;
+            line-height: 1.2rem;
+            color: var(--black-color);
+        }
+        .mission-story{
+            flex: 1 2 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            padding: 5px 20px;
+            background-color: white;
+        }
+        .ms-image{
+            flex: 0.5 2 250px;
+            width: auto;
+            height: auto;
+        }
+        .ms-content{
+            padding-top: 50px;
+            width: 50%;
+            margin: 10px;
+        }
+        .ms-content>h2,p{
+            width: 100%;
+            font-weight: 500;
+        }
+        .periferic-content{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #btnDiscover{
+            font-size: clamp(0.1rem,1.5vw,1rem);
+            width: 50%;
+        }
+        .offer-card{
+        align-self: center;
+        flex: 2 10 200px;
+        aspect-ratio: calc(1);
+        max-width: 250px;
+        width: auto;
+        padding: 10px;
+        border-radius: 15px;
+        background-color: rgb(252, 249, 249);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 5px;
+    } 
+    .offer-card>img{
+        align-self: flex-start;
+        width: 50px;
+        height: 50px;
+        margin-bottom: 40px;
+    }
+    .story{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100%;
+            padding:10px;
+            background: url(imagens/engenheiros-e-empreiteiros-de-construcao-que-monitoram-sistemas-de-paineis-solares.jpg);
+            background-position: cover;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            display: flex;
+            align-items: flex-start;
+            background-color: white;
+        }
+        .s-content{
+            margin: 5px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.493);
+            border-radius: 20px;
+            max-width: 300px;
+            width: auto;
+        }
+        .s-content h2{
+            font-weight: 600;
+            color: rgb(55, 78, 55);
+        }
+
+        @media (max-width: 600px) 
+        {
+            .mission-story{
+            flex: 1 2 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            width: 100%;
+            padding: 5px 20px;
+            background-color: white;
+            }
+            .ms-content{
+            padding-top: 10px;
+            width: auto;
+            margin: 10px;
+            }
+            .periferic-content{
+                display:none;
+             }
+            
+        }
+    </style>
+</head>
+<body>
+     <header>
+            <h1>Arrendaki</h1>
+            <nav>
+                    <a href="index.html" target="_self">Início</a>
+                    <a href="sobre.html" target="_parent" class="active">Sobre Nós</a>
+                    <a href="Iniciativas.html" target="_self">Iniciativas</a>
+                    <a href="proprietarios.html" target="_parent">Proprietários</a>
+                    <a href="propriedades.html" target="_parent">Propriedades</a>
+            </nav>
+            <button id="btnMenu"></button>
+            <button class="btn" id="btnContacte-nos">Contacte-nos</button>
+        </header>
+        <div id="menuOverlay" class="menu-overlay">
+            <img src="imagens/icons8-close-50.png" alt="" id="btnClose">
+        <nav id="menuNav">
+                <a href="index.html" target="_self">Início</a>
+                <a href="sobre.html" target="_parent">Sobre Nós</a>
+                <a href="Iniciativas.html" target="_parent">Iniciativas</a>
+                <a href="proprietarios.html" target="_parent">Proprietários</a>
+                <a href="propriedades.html" target="_parent">Propriedades</a>
+        </nav>
+        </div>
+        <main>
+            <section class="hero2">
+                <div class="lateral-content2">
+                    <h1>Transformando imóveis em <span>oportunidades</span></h1>
+                    <p>Proporcionamos soluções de arrendamento eficientes e sustentáveis para proprietários e inquilinos.</p>
+                    <button class="btnTransparent">Ler mais</button>
+                </div>
+            </section>
+
+            <section class="mission-story">
+
+                <div class="ms-image">
+                        <img src="imagens/alvo.png" alt="Imagem de alvo corporativo">
+                    </div>
+                    <div class="ms-content">
+                    <h2>Nossa Missão e História</h2>
+                    <p>Nossa missão é conectar proprietários e inquilinos de forma justa e transparente.Trabalhamos para simplificar processos e reduzir a burocracia do arrendamento.Priorizamos soluções sustentáveis, seguras e economicamente viáveis.<br>Estamos comprometidos em oferecer suporte dedicado em cada etapa.</p>
+
+                    <div class="periferic-content">
+                        <p style="width: 50%;">Fundada com o objetivo de integrgar a responsabilidade socia e</p>
+                        <button class="btn" id="btnDiscover">Descobrir serviços</button>
+                    </div>
+                    </div>
+            </section>
+            <section class="offers" style="background-color: transparent;">
+                <h2>O que nos move</h2>
+                <div class="offers-container">
+                    <div class="offer-card">
+                        <img src="imagens/icons8-segurança-60.png" alt="Ícone de contrato">
+                        <h3>Integridade</h3>
+                        <p>Garantimos a **integridade das informações**, assegurando que todos os dados e cláusulas dos contratos de arrendamento permaneçam completos, consistentes e protegidos contra alterações não autorizadas, promovendo confiança e transparência para ambas as partes.
+                        </p>
+                    </div>
+                    <div class="offer-card">
+                        <img src="imagens/icons8-troféu-32.png" alt="Ícone de suporte técnico">
+                        <h3>Excelência</h3>
+                        <p>Buscamos a **excelência** em cada funcionalidade da plataforma, oferecendo uma experiência intuitiva, eficiente e confiável, com padrões elevados de qualidade que garantem desempenho, segurança e satisfação para todos os utilizadores.
+                        </p>
+                </div>
+                
+                    <div class="offer-card">
+                        <img src="imagens/ChatGPT Image 2 de jan. de 2026, 18_04_17.png" alt="Ícone de pagamento">
+                        <h3>Responsabilidade Social</h3>
+                        <p>Promovemos a **responsabilidade social** ao incentivar relações de arrendamento justas e transparentes, apoiando práticas éticas, inclusão digital e o uso consciente da tecnologia para fortalecer a confiança, o respeito mútuo e o desenvolvimento sustentável da comunidade.
+                        </p>
+                    </div>
+            </section>
+            <section class="story">
+                    <div class="s-content">
+                    <h2>Nossa História</h2>
+                    <p>Nossa história começa com a identificação das dificuldades enfrentadas por proprietários e inquilinos na gestão do arrendamento. A partir dessa realidade, nasceu a ideia de criar uma plataforma web que aproximasse ambas as partes de forma simples, segura e transparente. Com foco na inovação e na confiança, a empresa evoluiu para oferecer soluções digitais que reduzem a burocracia, facilitam a comunicação e tornam o processo de arrendamento mais eficiente e acessível para todos.
+                    </p
+                    </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="object"></div>
+                    <h2>Dê o primeiro passo</h2>
+                    <p>
+                        Vamos trabalhar juntos para encontrar os melhores inquilinos para suas propriedades.
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Links rápidos</h3>
+                    <p><a href="#">Agende uma consulta</a></p>
+                    <p><a href="#">Saiba mais sobre nós</a></p>
+            </div>
+        </div>
+                    <p style="color: white;text-align: center;">&copy; 2024 Arrendar Casa. Todos os direitos reservados.</p>
+        </footer>
+
+        <script src="JS/script.js"></script>
+</body>
+</html>
