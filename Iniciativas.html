@@ -43,7 +43,6 @@
             margin: 5px 0;
             padding: 20px 0;
             width: 100%;
-            background-color: white;
         }
         h2{
         font-size: clamp(1.5rem, 2vw, 2.5rem);
@@ -53,6 +52,7 @@
         }
         #iniciativas{
             margin: 15px 0;
+            padding: 0 20px;
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -64,50 +64,58 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
-            margin: 20px 2px;
-            padding: -1px 5px;
+            margin: 10px 5px;
+            padding: 2px 5px;
             width: 100%;
             max-width: 1000px;
-            height: auto;
-            box-shadow: 1px 0 5px rgba(0, 0, 0, 0.12);
+            height: 300px;
+            box-shadow: 1px 1px 4px rgba(65, 62, 62, 0.12);
+            background-color: white;
+            border-radius: 10px;
         }
         .card-content{
             align-self: flex-start;
-            margin: 60px 10px;
+            margin: 20px 10px;
             width: auto;
         }
         .card-content>p {
-            align-items: flex-end;
             text-align: justify;
             width: auto;
-            margin: 5px;
+            max-width: 600px;
+            margin: 10px 0;
+            padding: 0 20px 10px 0;
         }
         .card-image{
-            width: 60%;
+            width: 50%;
             height: auto;
-            align-content: center;
+            padding: 10px 5px;
         }
         .card-image>img{
+            width: 100%;
             height: 100%;
-            width: auto;
-            max-width: 250px;
+            object-fit: cover;
+            border-radius: 10px;
         }
         .partineship{
             margin: 15px 0;        
+            width: 100%;
         }
         .partineship-conteiner{
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 5px 1px;
+            margin: 5px 0;
+            padding: 0 180px;
         }
         .partineship-conteiner-children{
+            width: 100%;
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
+            justify-content: space-evenly;
             align-items: center;
-            margin: 5px 0;
+            margin: 10px 0;
         }
         .partiship-card{
             display: flex;
@@ -115,10 +123,12 @@
             justify-content: center;
             align-items: center;
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.322);
-            margin: 10px;
+            border-radius: 10px;
             padding: 10px 1px;
+            margin: 0;
             width: auto;
-            max-width: 250px;
+            max-width: 350px;
+            height: auto;
 
         }
          .partiship-card>h3{
@@ -134,22 +144,62 @@
             padding: 2px 10px 10px 10px;
         }
         .impact-stories{
-            background-color: white;
             margin: 15px 0;
             padding: 20px;
             width: 100%;
         }
-        .impact-stories>p{
+        .impact-conteiner{
             width: 100%;
-            text-align: justify;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .card-impact{
+            text-align: center;
+            width: 50%;
+            max-width: 350px;
+            margin: 0 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: white;
+            border-radius: 10px;
+             box-shadow: 1px 1px 4px rgba(65, 62, 62, 0.12);
         }
         .img-impact{
-            display: block;
-            margin: auto;
-            width: auto;
-            max-width: 500px;
+            width: 100%;
+            margin: 0 0 15px 0;
         }
-
+        .img-impact>img{
+            width: 100%;
+            height: auto;
+            max-height: 250px;
+            object-fit: cover;
+        }
+        .card-impact>p{
+            width: 100%;
+            text-align: center;
+            padding: 10px 10px 20px 10px;
+        }
+        .depoimentos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 100%;
+        }
+        .depoimento{
+            max-width: 440px;
+        }
+        .depoimento>p{
+            width: 100%;
+        }
+        footer{
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -185,36 +235,39 @@
             </section>
             <section class="our-iniciatives">
                 <h2 style="text-align: center;">Nossas iniciativas</h2>
-
                 <div id="iniciativas">
-                        <div class="iniciative-card">
-                            <div class="card-content">
-                                <h3>Suporte Familiar</h3>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eveniet aut quisquam quae quam maiores, ipsam commodi assumenda error eligendi doloremque exercitationem aperiam blanditiis voluptates natus dicta illo nulla iste.</p>
-                            </div>
-                            <div class="card-image">
-                                <img src="imagens/house.png" alt="">
-                            </div>
-                    </div>
                     <div class="iniciative-card">
                         <div class="card-image">
-                            <img src="imagens/house.png" alt="">
+                            <img src="imagens/mulher-negra-usar-telemovel-e-portatil.jpg" alt="">
                         </div>
                         <div class="card-content">
-                            <h3>Sustainability Practices</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eveniet aut quisquam quae quam maiores, ipsam commodi assumenda error eligendi doloremque exercitationem aperiam blanditiis voluptates natus dicta illo nulla iste.</p>
+                            <h3>Suporte Familiar
+                            </h3>
+                            <p>Suporte familiar é uma das bases do nosso compromisso social, oferecendo apoio contínuo às famílias para que encontrem não apenas uma casa, mas um verdadeiro lar. Trabalhamos para garantir estabilidade, segurança e bem-estar, criando soluções acessíveis que atendem às necessidades reais de cada agregado, promovendo inclusão, dignidade e melhores condições de vida para todos.
+                            </p>
                         </div>
                     </div>
                     <div class="iniciative-card">
+                        <div class="card-content">
+                            <h3>Práticas de Sustentabilidade</h3>
+                            <p>
+                                Promovemos ações responsáveis que visam reduzir o impacto ambiental e incentivar o uso consciente dos recursos no dia a dia. Apostamos em soluções eficientes, desde a gestão de energia até à redução de desperdícios, contribuindo para ambientes mais saudáveis, equilibrados e alinhados com as necessidades das gerações atuais e futuras.
+                            </p>
+                        </div>
+                         <div class="card-image">
+                            <img src="imagens/engenheiros-e-empreiteiros-de-construcao-que-monitoram-sistemas-de-paineis-solares.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="iniciative-card">
+                            <div class="card-image">
+                            <img src="imagens/casa-propria-940x682.jpg" alt="">
+                        </div>
                         <div class="card-content">
                             <h3>Engajamento a Comunidade</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore eveniet aut quisquam quae quam maiores, ipsam commodi assumenda error eligendi doloremque exercitationem aperiam blanditiis voluptates natus dicta illo nulla iste.</p>
-                        </div>
-                        <div class="card-image">
-                            <img src="imagens/house.png" alt="">
+                            <p>Nosso compromisso com o engajamento comunitário é fundamental para construir conexões significativas e fortalecer os laços sociais. Acreditamos que a participação ativa da comunidade é essencial para criar um ambiente mais inclusivo, colaborativo e resiliente, onde todos têm voz e podem contribuir para o desenvolvimento sustentável e o bem-estar coletivo.
+                            </p>
                         </div>
                     </div>
-                </div>
             </section>
             <section class="partineship">
                 <h2>Participações</h2>
@@ -251,36 +304,42 @@
             </section>
             <section class="impact-stories">
                 <h2>Histórias Impactantes</h2>
-                <div class="impact-conteiiner">
-                    <div class="img-impact"><img src="imagens/house.png" alt=""></div>
-                    <h3>A Brighter Future for the Jonhson Family</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam eius, quod qui atque suscipit exercitationem perferendis ipsam ea numquam, fugit, corporis ipsum! Suscipit ut aut nemo facere quasi magni?</p>
-
-                    <div class="img-impact"><img src="imagens/house.png" alt=""></div>
-                    <h3>A Brighter Future for the Jonhson Family</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam eius, quod qui atque suscipit exercitationem perferendis ipsam ea numquam, fugit, corporis ipsum! Suscipit ut aut nemo facere quasi magni?</p>
+                <div class="impact-conteiner">
+                    <div class="card-impact">
+                        <div class="img-impact"><img src="imagens/casa-propria-940x682.jpg" alt=""></div>
+                        <h3>A Brighter Future for the Jonhson Family</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam eius, quod qui atque suscipit exercitationem perferendis ipsam ea numquam, fugit, corporis ipsum! Suscipit ut aut nemo facere quasi magni?
+                        </p>
+                    </div>
+                    <div class="card-impact">
+                        <div class="img-impact"><img src="imagens/casa-propria-940x682.jpg" alt="">
+                        </div>
+                        <h3>A Brighter Future for the Jonhson Family</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit quisquam eius, quod qui atque suscipit exercitationem perferendis ipsam ea numquam, fugit, corporis ipsum! Suscipit ut aut nemo facere quasi magni?</p>
+                    </div>
                 </div>
             </section>
             <section class="depoimentos">
                 <h2>O que nossos <span>parceiros</span> dizem</h2>
-                <h3>Testemunhos</h3>
-                <div class="depoimentos-container">
-                    <div class="depoimento">
-                        <p><strong>"</strong> <br>Desde que comecei a usar esta plataforma, encontrei inquilinos confiáveis rapidamente. O suporte ao cliente é excepcional!</p>
-                        <div class="testemunha-info">
-                            <img src="imagens/man-5757539_1280.jpg" alt="testemunha">
-                            <h3>- João S. Cardoso</h3>
+                <div>
+                    <h3 >Testemunhos</h3>
+                    <div class="depoimentos-container">
+                        <div class="depoimento">
+                            <p><strong>"</strong> <br>Desde que comecei a usar esta plataforma, encontrei inquilinos confiáveis rapidamente. O suporte ao cliente é excepcional!</p>
+                            <div class="testemunha-info">
+                                <img src="imagens/man-5757539_1280.jpg" alt="testemunha">
+                                <h3>- João S. Cardoso</h3>
+                            </div>
+                        </div>
+                        <div class="depoimento">
+                            <p><strong>"</strong> <br>A facilidade de uso da plataforma tornou o gerenciamento das minhas propriedades muito mais simples. Recomendo a todos os proprietários!</p>
+                            <div class="testemunha-info">
+                                <img src="imagens/woman-1132617_1280.jpg" alt="testemunha">
+                                <h3>- Maria L.</h3>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="depoimento">
-                        <p><strong>"</strong> <br>A facilidade de uso da plataforma tornou o gerenciamento das minhas propriedades muito mais simples. Recomendo a todos os proprietários!</p>
-                        <div class="testemunha-info">
-                            <img src="imagens/woman-1132617_1280.jpg" alt="testemunha">
-                            <h3>- Maria L.</h3>
-                        </div>
-                    </div>
-                </div>  
+                </div>
                 <p style="text-align: center;">Gostaria de saber como podemos te ajudar?</p>
                 <button class="btn" id="btnContacte-nos3">Contacte-nos</button>
             </section>
@@ -300,7 +359,7 @@
                     <p><a href="#">Saiba mais sobre nós</a></p>
             </div>
         </div>
-            <p>&copy; 2024 Arrendar Casa. Todos os direitos reservados.</p>
+            <p style="color: white; font-size: 1rem; text-align: center;">&copy; 2024 Arrendar Casa. Todos os direitos reservados.</p>
         </footer>
 
         <script src="JS/script.js"></script>
